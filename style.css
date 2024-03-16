@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Map dimension */
+#map {
+  height: 110vh;
+  width: 171vh;
+  left: 39vh;
+  top: -1vh;
+  flex: 1;
+  border-radius: 9px;
+}
+
+/* Info box displayed on top-right of map. */
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+/* Nav */
+.navbar {
+  position: absolute;
+  top: 13vh;
+  left: 4vh;
+  height: 80%;
+  width: 250px; /* Adjust the width as needed */
+  background-color: rgb(0, 80, 8); /* Adjust background color */
+  padding: 20px;
+  border-right: 1px solid #ccc; /* Add border to separate from map */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  z-index: 1000; /* Ensure it's on top of the map */
+  list-style-type: none;
+  border-radius: 20px;
+}
+
+.btn-nav-center {
+  width: 150px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  height: 39px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+  margin-top: 0.5vh;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.btn-nav-center:hover {
+  color: #ffffff;
+  background-color: #006570;
+}
+
+.btn-nav-overlay {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-left: 3vh;
+  margin-top: 1vh;
+  position: absolute;
+  margin-top: 12px;
+}
+
+.btn-nav-overlay:hover {
+  color: #006570;
+}
+
